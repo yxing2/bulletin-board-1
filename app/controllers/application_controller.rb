@@ -5,5 +5,4 @@ def home
   render({ :template => "layouts/home" })
 end
 
-
 end

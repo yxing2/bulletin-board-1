@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get("/", { :controller => "application", :action => "home"})
+  get("/", { :controller => "boards", :action => "index" })
 
   # Routes for the Post resource:
   # CREATE
@@ -10,7 +10,6 @@ Rails.application.routes.draw do
   get("/posts/:path_id", { :controller => "posts", :action => "show" })
   
   # UPDATE
-  
   post("/modify_post/:path_id", { :controller => "posts", :action => "update" })
   
   # DELETE
